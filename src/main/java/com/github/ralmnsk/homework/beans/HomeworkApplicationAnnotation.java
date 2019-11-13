@@ -1,8 +1,5 @@
-package com.github.ralmnsk.homework;
+package com.github.ralmnsk.homework.beans;
 
-import com.github.ralmnsk.homework.beans.BeanConfiguration;
-import com.github.ralmnsk.homework.beans.MessageVIsualizator;
-import com.github.ralmnsk.homework.beans.MessageVisualizatorThird;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;

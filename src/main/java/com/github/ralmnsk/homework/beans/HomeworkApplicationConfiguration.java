@@ -1,4 +1,4 @@
-package com.github.ralmnsk.homework;
+package com.github.ralmnsk.homework.beans;
 
 import com.github.ralmnsk.homework.beans.BeanConfiguration;
 import com.github.ralmnsk.homework.beans.MessageVIsualizator;
