@@ -11,7 +11,7 @@ public class RenderImpl implements Render{
     @Postproc
     @Override
     public void action() {
-        for (int i=0;i<1000;i++){
+        for (int i=0;i<1000000;i++){
             String str=" action:"+i*2;
         }
     }

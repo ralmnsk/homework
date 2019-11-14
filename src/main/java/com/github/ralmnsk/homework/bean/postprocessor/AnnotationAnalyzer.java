@@ -4,9 +4,12 @@ import java.lang.invoke.MethodHandle;
 import java.lang.invoke.MethodHandles;
 import java.lang.invoke.MethodType;
 import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.List;
 
 public class AnnotationAnalyzer {
-    public void analyze(Class<?> clazz){
+    public List<Method> analyze(Class<?> clazz){
+        List<Method> list=new ArrayList<>();
         Method[] methods = clazz.getMethods();
 
 //        Object obj=clazz.getClass().newInstance();
@@ -20,10 +23,12 @@ public class AnnotationAnalyzer {
                     long stopTime = System.currentTimeMillis();
                     long elapsedTime = stopTime - startTime;
                     System.out.println(method.toString()+" execution time:"+elapsedTime);
+                    list.add(method);
                 } catch (Exception e){
                  e.printStackTrace();
                 }
             }
         }
+        return list;
     }
 }

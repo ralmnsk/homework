@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class RenderImplThree implements Render{
 
-    @Postproc
+
     @Override
     public void action() {
         for (int i=0;i<100000;i++){

@@ -14,7 +14,6 @@ import java.util.Map;
 @ComponentScan("com.github.ralmnsk.homework.bean.postprocessor")
 public class Application {
 
-
     public static void main(String...a){
             ApplicationContext ctx= new AnnotationConfigApplicationContext(Application.class);
         Map<String, Object> map = ctx.getBeansOfType(Object.class);
