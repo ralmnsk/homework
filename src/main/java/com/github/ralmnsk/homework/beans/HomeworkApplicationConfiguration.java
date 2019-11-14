@@ -9,7 +9,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class HomeworkApplicationConfiguration {
 
 	public static void main(String[] args) {
-//		SpringApplication.run(HomeworkApplication.class, args);
+//		SpringApplication.run(HomeworkApplicationXml.class, args);
 		ApplicationContext ctx=new AnnotationConfigApplicationContext(BeanConfiguration.class);
 		MessageVIsualizator m=(MessageVIsualizator)ctx.getBean("messageVIsualizatorSecond");
 		m.view();

@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 public class HomeworkApplicationAnnotation {
 
 	public static void main(String[] args) {
-//		SpringApplication.run(HomeworkApplication.class, args);
+//		SpringApplication.run(HomeworkApplicationXml.class, args);
 		ApplicationContext ctx=new AnnotationConfigApplicationContext(HomeworkApplicationAnnotation.class);
 		MessageVIsualizator m=(MessageVIsualizator)ctx.getBean(MessageVisualizatorThird.class);
 		m.view();

@@ -1,16 +1,14 @@
 package com.github.ralmnsk.homework.beans;
 
-import com.github.ralmnsk.homework.beans.MessageVIsualizator;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 //@SpringBootApplication
-public class HomeworkApplication {
+public class HomeworkApplicationXml {
 
 	public static void main(String[] args) {
-//		SpringApplication.run(HomeworkApplication.class, args);
+//		SpringApplication.run(HomeworkApplicationXml.class, args);
 		ApplicationContext ctx=new ClassPathXmlApplicationContext("beans.xml");
 		MessageVIsualizator m=(MessageVIsualizator)ctx.getBean("visualizator");
 		m.view();
